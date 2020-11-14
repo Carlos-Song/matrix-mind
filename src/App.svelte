@@ -40,6 +40,10 @@
     margin-left: var(--mleft);
   }
 
+  .observablehq canvas {
+    width: 100%;
+  }
+
   .bx--tabs__nav {
     height: 100%;
   }

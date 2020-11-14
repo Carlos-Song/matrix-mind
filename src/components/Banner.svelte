@@ -1,5 +1,6 @@
 <script lang="ts">
   import { Runtime, Inspector } from "@observablehq/runtime";
+import { onMount } from "svelte";
   export var title;
 
   function notebook(runtime, observer) {
@@ -104,6 +105,9 @@
   .banner-container {
     position: relative;
   }
+  .banner-inner {
+    overflow: hidden;
+  }
 
   .banner-title {
     position: absolute;
@@ -113,6 +117,6 @@
 </style>
 
 <div class="banner-container">
-  <div use:draw />
+  <div class="banner-inner" use:draw />
   <h1 class="banner-title">{title}</h1>
 </div>
